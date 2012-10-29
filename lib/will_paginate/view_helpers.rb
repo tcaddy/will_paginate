@@ -288,10 +288,10 @@ module WillPaginate
 
     # The gap in page links is represented by:
     #
-    #   <span class="gap">&hellip;</span>
+    #   <span class="gap">&#8230;</span>
     def gap_marker
       @gap_marker ||= begin
-        gap_text = @template.will_paginate_translate(:page_gap) { '&hellip;' }
+        gap_text = @template.will_paginate_translate(:page_gap) { '&#8230;' }
         %(<span class="gap">#{gap_text}</span>)
       end
     end
